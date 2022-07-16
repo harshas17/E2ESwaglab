@@ -23,6 +23,8 @@ public class Listeners extends base implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);
+		//to print method name
+		System.out.println(result.getName());
 		
 	}
 
